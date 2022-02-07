@@ -91,6 +91,7 @@
   left: 0;
   padding: 2%;
   line-height: 1.5;
+  font-size: 1.5rem;
 }
 
 .intro > div:hover {
@@ -102,9 +103,14 @@
   transform : scale(1);
   transition-duration: 0;
 }
+
 .intro div:nth-child(6):active .intro__text {
   visibility: hidden;
 }
 .intro div:nth-child(6):active .intro__text__hidden {
   visibility: visible;
+}
+
+#click {
+  color: var(--white);
 }
