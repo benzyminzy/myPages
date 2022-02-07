@@ -1,0 +1,33 @@
+.cause {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cause > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.cause__main {
+  margin-bottom: 30px;
+}
+
+.cause__text {
+  line-height: 1.3em;
+  width: 100vw;
+  text-align: center;
+}
+
+.cause__main span:first-child {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.cause__main span:last-child {
+  font-size: 2rem;
+}

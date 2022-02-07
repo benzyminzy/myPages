@@ -1,0 +1,110 @@
+.intro {
+  background-color: var(--white);
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-template-rows: repeat(4, minmax(auto, auto));
+}
+
+.intro > div:first-child {
+  background-color: var(--yellow);
+  color: var(--white);
+  grid-row: 1 / 3;
+}
+
+.intro > div:nth-child(2) {
+  background-image: url(../img/nike.jpeg);
+  background-size: cover;
+  grid-column: 2 / 4;
+}
+
+.intro > div:nth-child(3) {
+  background-image: url(../img/art.jpeg);
+  background-size: cover;
+}
+
+.intro > div:nth-child(4) {
+  background-color: var(--orange);
+  color: var(--blue);
+  grid-column: 5 /7 ;
+  grid-row: 1 / 3;
+  font-size: 3rem;
+  font-weight: 900;
+  word-break: break-all;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.intro > div:nth-child(5) {
+  background-image: url(../img/9c4762022.png);
+  background-size: cover;
+  grid-column: 1 / 2;
+}
+
+.intro > div:nth-child(6) {
+  background-color: var(--blue);
+  grid-column: 2 / 4 ;
+  grid-row: 2 / 4;
+  font-size : 2rem;
+  color: #F2FC7A;
+  font-weight: 800;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.intro > div:nth-child(7) {
+  background-image: url(../img/apple.jpeg);
+  background-size: cover;
+  grid-row : 2 / 4;
+}
+
+.intro > div:nth-child(8) {
+  background-image: url(../img/dog.jpeg);
+  background-size: cover;
+  grid-column: 5 / 7;
+  grid-row: 3 / 5;
+}
+
+.intro > div:nth-child(9) {
+  background-image: url(../img/coffee.jpeg);
+  background-size: cover;
+  grid-column: 2 / 3 ;
+}
+
+.intro > div:last-child {
+  background-color: var(--yellow);
+  color: var(--white);
+  grid-column: 3 / 5;
+}
+
+.intro__text, .intro__title {
+  padding: 2%;
+}
+
+.intro__text__hidden {
+  text-align: left;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 2%;
+  line-height: 1.5;
+}
+
+.intro > div:hover {
+  transform: scale(1.1);
+  transition-duration: 0.5s;
+}
+
+.intro div:nth-child(6):hover {
+  transform : scale(1);
+  transition-duration: 0;
+}
+.intro div:nth-child(6):active .intro__text {
+  visibility: hidden;
+}
+.intro div:nth-child(6):active .intro__text__hidden {
+  visibility: visible;
+}
